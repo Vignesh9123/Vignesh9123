@@ -14,9 +14,10 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?: any; 
   blur?: string;
 }
+
 const BlurFade = ({
   children,
   className,
