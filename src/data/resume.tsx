@@ -4,9 +4,9 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Vignesh",
   initials: "D",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  url: "https://dub.sh/vignesh-portfolio",
+  location: "India",
+  locationLink: "https://www.google.com/maps/place/mysuru",
   description:
     "Coding and Movies",
   summary:
@@ -34,21 +34,21 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/Vignesh9123",
+        url: "https://git.new/vignesh-gh",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/vignesh-d-mys",
+        url: "https://dub.sh/vignesh-linkedin",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://x.com/_Unique_swagger",
+        url: "https://dub.sh/vignesh-x",
         icon: Icons.x,
 
         navbar: true,
@@ -97,7 +97,7 @@ export const DATA = {
   projects: [
     {
       title: "Noteflix",
-      href: "https://noteflix-v1.vercel.app/",
+      href: "https://dub.sh/noteflix",
       dates: "January 2025",
       active: true,
       description:
@@ -115,12 +115,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://noteflix-v1.vercel.app/",
+          href: "https://dub.sh/noteflix",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/Vignesh9123/Noteflix",
+          href: "https://git.new/noteflix",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -130,7 +130,7 @@ export const DATA = {
     },
     {
       title: "Reportify",
-      href: "https://reportify-ai.vercel.app/",
+      href: "https://dub.sh/reportify",
       dates: "February 2025",
       active: true,
       description:
@@ -148,12 +148,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://reportify-ai.vercel.app/",
+          href: "https://dub.sh/reportify",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/Vignesh9123/Reportify",
+          href: "https://git.new/reportify",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -162,7 +162,7 @@ export const DATA = {
     },
     {
       title: "The Campus Network",
-      href: "https://the-campus-network.vercel.app",
+      href: "https://dub.sh/the-campus-network",
       dates: "November 2024",
       active: true,
       description:
@@ -181,12 +181,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://the-campus-network.vercel.app",
+          href: "https://dub.sh/the-campus-network",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/vignesh9123/the-campus-network",
+          href: "https://git.new/campus-network",
           icon: <Icons.github className="size-3" />,
         },
       ],
