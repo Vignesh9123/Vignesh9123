@@ -105,12 +105,11 @@ export const DATA = {
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "MongoDB",
         "TailwindCSS",
-        "Stripe",
         "Shadcn UI",
-        "Magic UI",
+        "YouTube API",
+        "Generative AI"
       ],
       links: [
         {
@@ -136,15 +135,11 @@ export const DATA = {
       description:
         "Built the backend of this web app used by JSSSTU Students to generate academic reports from their data using AI.😉",
       technologies: [
-        "Next.js",
+        "Express.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
+        "MongoDB",
+        "Generative AI"
+],
       links: [
         {
           type: "Website",
@@ -161,6 +156,37 @@ export const DATA = {
       video: "https://res.cloudinary.com/dxygc9jz4/video/upload/v1743072282/qp2kxgtgi9gach94k2a6.mp4",
     },
     {
+      title: "Trendwave",
+      href: "https://dub.sh/trend-wave",
+      dates: "April 2025",
+      active: true,
+      description:
+        "A data-driven app built to visualize trending content. Features include content filters, sentiment analysis —ideal for understanding social post performance.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "Redis",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://dub.sh/trend-wave",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://git.new/trend-wave",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/trend-wave.png",
+      video: "",
+    },
+    {
       title: "The Campus Network",
       href: "https://dub.sh/the-campus-network",
       dates: "November 2024",
@@ -168,15 +194,14 @@ export const DATA = {
       description:
         "Built a MERN-based platform that helps engineering students track personal and team project progress with real-time updates. It also includes chat features to boost collaboration, creating a connected and productive campus community.",
       technologies: [
-        "Next.js",
+        "React.js",
+        "MongoDB",
+        "Node.js",
+        "Express.js",
+        "WebSocket",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
         "TailwindCSS",
         "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
       ],
       links: [
         {
@@ -192,7 +217,7 @@ export const DATA = {
       ],
       image: "/tcn.jpeg",
       video: "",
-    },
+    }
   ],
   hackathons: [
     {
