@@ -13,15 +13,19 @@ export const DATA = {
     "I&apos;m a 2026 graduate, love to learn new jargons/skills and become fairly good at them. When I am not coding, I just love to watch movies. I am currently looking for an internship opportunity where I can learn new skills and design principles and apply them in production. ",
   avatarUrl: "/me.jpg",
   skills: [
-    "React",
+    "ReactJS",
     "Next.js",
     "Typescript",
     "Node.js",
     "Express.js",
     "MongoDB",
+    "PostgreSQL",
     "Redis",
     "AWS",
+    "Git/Github",
+    "Devops",
     "Docker",
+    "Kubernetes",
     "C++"
   ],
   navbar: [
@@ -95,6 +99,38 @@ export const DATA = {
     }
   ],
   projects: [
+    {
+      title: "StreamForge",
+      href: "https://dub.sh/video-hls-demo",
+      dates: "July 2025",
+      active: true,
+      description:
+        "StreamForge is a scalable, cloud-native video transcoding platform built with AWS, FFmpeg, and Docker. It supports secure video uploads, automatic segmentation into multiple resolutions, and adaptive bitrate streaming via HLS. The system uses event-driven architecture with SQS and containerized workers for efficient, parallel processing.",
+      technologies: [
+        "React.js", 
+        "Express.js", 
+        "PostgreSQL",
+        "AWS S3, SQS, ECS, Fargate",
+        "Docker", 
+        "FFmpeg", 
+        "Prisma ORM" 
+      ],
+      links: [
+        {
+          type: "Demo",
+          href: "https://dub.sh/video-hls-demo",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://git.new/video-hls",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://res.cloudinary.com/dxygc9jz4/video/upload/f_auto:video,q_auto/v1753439208/StreamForge_Demo_biljha",
+    },
     {
       title: "Noteflix",
       href: "https://dub.sh/noteflix",
