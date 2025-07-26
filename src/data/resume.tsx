@@ -96,6 +96,7 @@ export const DATA = {
       logoUrl: "/jssstulogo.png",
       start: "2022",
       end: "2026",
+      score: "9.32 CGPA",
     }
   ],
   projects: [

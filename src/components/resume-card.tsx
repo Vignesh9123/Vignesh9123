@@ -18,6 +18,7 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  score?: string;
 }
 export const ResumeCard = ({
   logoUrl,
@@ -41,6 +42,7 @@ export const ResumeCard = ({
   return (
     <Link
       href={href || "#"}
+      target="_blank"
       className="block cursor-pointer"
       onClick={handleClick}
     >
@@ -84,7 +86,15 @@ export const ResumeCard = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+            {/* {subtitle && <div className="font-sans text-xs">{subtitle}</div>} */}
+            <div className="flex items-center justify-between gap-x-2 text-base">
+              <p className="font-sans text-xs">
+                {subtitle}
+              </p>
+              <div className="text-xs tabular-nums text-muted-foreground text-right">
+                {score}
+              </div>
+            </div>
           </CardHeader>
           {description && (
             <motion.div
