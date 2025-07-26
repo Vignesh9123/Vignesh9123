@@ -87,12 +87,11 @@ export const ResumeCard = ({
                 {period}
               </div>
             </div>
-            {/* {subtitle && <div className="font-sans text-xs">{subtitle}</div>} */}
             <div className="flex items-center justify-between gap-x-2 text-base">
               <p className="font-sans text-xs">
                 {subtitle}
               </p>
-              <div className="text-xs tabular-nums text-muted-foreground text-right">
+              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
                 {score}
               </div>
             </div>
