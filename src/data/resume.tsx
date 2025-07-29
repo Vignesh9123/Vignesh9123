@@ -114,7 +114,9 @@ export const DATA = {
         "AWS S3, SQS, ECS, Fargate",
         "Docker", 
         "FFmpeg", 
-        "Prisma ORM" 
+        "Prisma ORM" ,
+        "WebSocket",
+        "Redis PubSub"
       ],
       links: [
         {
