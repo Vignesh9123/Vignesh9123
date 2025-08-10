@@ -103,7 +103,7 @@ export const DATA = {
   projects: [
     {
       title: "StreamForge",
-      href: "https://dub.sh/video-hls-demo",
+      href: "https://video-transcoding-e2e.vercel.app",
       dates: "July 2025",
       active: true,
       description:
@@ -121,8 +121,8 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Demo",
-          href: "https://dub.sh/video-hls-demo",
+          type: "Website",
+          href: "https://video-transcoding-e2e.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
