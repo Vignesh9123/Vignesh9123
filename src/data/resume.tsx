@@ -173,7 +173,7 @@ export const DATA = {
       dates: "February 2025",
       active: true,
       description:
-        "Built the backend of this web app used by JSSSTU Students to generate academic reports from their data using AI.😉",
+        "Built the backend of this web app used by JSSSTU Students to generate academic reports from their data using AI.",
       technologies: [
         "Express.js",
         "Typescript",
