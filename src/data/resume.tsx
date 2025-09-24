@@ -76,18 +76,18 @@ export const DATA = {
   },
 
   work: [
-    // {
-    //   company: "Mitre Media",
-    //   href: "https://mitremedia.com/",
-    //   badges: [],
-    //   location: "Toronto, ON",
-    //   title: "Software Engineer",
-    //   logoUrl: "/mitremedia.png",
-    //   start: "May 2017",
-    //   end: "August 2017",
-    //   description:
-    //     "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
-    // },
+    {
+      company: "OpenText",
+      href: "https://opentext.com",
+      badges: [],
+      location: "Bengaluru, IN",
+      title: "Incoming Intern",
+      logoUrl: "/OpenText.jpg",
+      start: "Oct 2025",
+      // end: "August 2017",
+      // description:
+      //   "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+    },
   ],
   education: [
     {
