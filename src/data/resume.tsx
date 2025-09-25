@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Coding and Movies",
   summary:
-    "I&apos;m a 2026 graduate, love to learn new jargons/skills and become fairly good at them. When I am not coding, I just love to watch movies. I am currently looking for an internship opportunity where I can learn new skills and design principles and apply them in production. ",
+    "I&apos;m a 2026 graduate, love to learn new jargons/skills and become fairly good at them. When I am not coding, I just love to watch movies. Always looking for an opportunity where I can learn new skills and design principles and apply them in production. ",
   avatarUrl: "/me.jpg",
   skills: [
     "ReactJS",
