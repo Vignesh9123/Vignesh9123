@@ -84,7 +84,7 @@ export const DATA = {
       title: "Incoming Intern",
       logoUrl: "/OpenText.jpg",
       start: "Oct 2025",
-      end: "",
+      end: "Present",
       description:""
         // "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
     },
