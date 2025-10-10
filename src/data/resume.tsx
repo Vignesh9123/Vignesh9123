@@ -81,7 +81,7 @@ export const DATA = {
       href: "https://opentext.com",
       badges: [],
       location: "Bengaluru, IN",
-      title: "Incoming Intern",
+      title: "Intern",
       logoUrl: "/OpenText.jpg",
       start: "Oct 2025",
       end: "Present",
