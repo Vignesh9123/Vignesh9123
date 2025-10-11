@@ -1,4 +1,5 @@
 import { HackathonCard } from "@/components/hackathon-card";
+import { NowWatchingItem } from "@/components/item-demo";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -49,6 +50,14 @@ export default function Page() {
             {DATA.summary}
           </Markdown>
         </BlurFade>
+        <section id="nowWatching" className="my-2">
+          <BlurFade delay={BLUR_FADE_DELAY * 3}>
+            <h2 className="text-xl font-bold">Now Watching</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 4}>
+            <NowWatchingItem items={DATA.nowWatching} />
+          </BlurFade>
+        </section>
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
@@ -75,7 +84,7 @@ export default function Page() {
           ))}
         </div>
       </section>
-     
+
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>

@@ -74,7 +74,13 @@ export const DATA = {
       },
     },
   },
-
+  nowWatching:[{
+    title: "Silicon Valley",
+    genre: "Comedy",
+    year: "2014",
+    link: "https://www.hotstar.com/in/shows/silicon-valley/1971002879",
+    imageLink: "https://img10.hotstar.com/image/upload/f_auto,q_auto/sources/r1/cms/prod/9797/1739945919797-i"
+  }],
   work: [
     {
       company: "OpenText",
