@@ -76,11 +76,11 @@ export const DATA = {
     },
   },
   nowWatching:[{
-    title: "The Big Bang Theory",
+    title: "Silicon Valley",
     genre: "Comedy",
-    year: "2007",
-    link: "https://www.netflix.com/watch/70143830?source=35",
-    imageLink: "https://m.media-amazon.com/images/I/81rrQdTg9jL._AC_UF1000,1000_QL80_.jpg"
+    year: "2014",
+    link: "https://www.hotstar.com/in/shows/silicon-valley/1971002879",
+    imageLink: "https://m.media-amazon.com/images/I/814uptxbBOL._AC_UF1000,1000_QL80_.jpg"
   }],
   work: [
     {
