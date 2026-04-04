@@ -80,7 +80,7 @@ export const DATA = {
     genre: "Comedy",
     year: "2017",
     link: "https://www.primevideo.com/detail/0JIOH8740DSE21Q80Y0IM1WJYS/ref=atv_dp_share_cu_r",
-    imageLink: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZXTCv7fgP4a4U0oGrBUrMUA4d2m68XVE0oO4Y7p5HNmiVqqNf"
+    imageLink: "https://m.media-amazon.com/images/M/MV5BODU3M2FmMDctNGViYi00OGUxLThkZDAtZmRkZDBhNWJhNDIzXkEyXkFqcGc@._V1_.jpg"
   }],
   work: [
     {
