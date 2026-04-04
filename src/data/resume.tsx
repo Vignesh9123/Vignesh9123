@@ -15,8 +15,12 @@ export const DATA = {
   skills: [
     "ReactJS",
     "Next.js",
+    "AngularJS",
     "Typescript",
     "Node.js",
+    "Python",
+    "FastAPI",
+    "Flask",
     "Express.js",
     "WebSockets",
     "MongoDB",
