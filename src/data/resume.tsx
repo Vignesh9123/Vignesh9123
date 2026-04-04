@@ -76,23 +76,23 @@ export const DATA = {
     },
   },
   nowWatching:[{
-    title: "Silicon Valley",
+    title: "Young Sheldon",
     genre: "Comedy",
-    year: "2014",
-    link: "https://www.hotstar.com/in/shows/silicon-valley/1971002879",
-    imageLink: "https://m.media-amazon.com/images/I/814uptxbBOL._AC_UF1000,1000_QL80_.jpg"
+    year: "2017",
+    link: "https://www.primevideo.com/detail/0JIOH8740DSE21Q80Y0IM1WJYS/ref=atv_dp_share_cu_r",
+    imageLink: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZXTCv7fgP4a4U0oGrBUrMUA4d2m68XVE0oO4Y7p5HNmiVqqNf"
   }],
   work: [
     {
       company: "OpenText",
       href: "https://opentext.com",
-      badges: [],
+      badges: ["FastAPI", "AngularJS", "Flask","Plugin architecture", "Automation"],
       location: "Bengaluru, IN",
       title: "Intern",
       logoUrl: "/OpenText.jpg",
       start: "Oct 2025",
-      end: "Present",
-      description:""
+      end: "Apr 2026",
+      description:"Implemented Python-based build scripts to generate ZIP distributions of an automation platform used for installation, migration, and upgrades across multiple OpenText products.\nWorked on refactoring the Flask codebase into a FastAPI plugin-based architecture."
         // "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
     },
   ],
@@ -104,7 +104,7 @@ export const DATA = {
       logoUrl: "/jssstulogo.png",
       start: "2022",
       end: "2026",
-      score: "9.32 CGPA",
+      score: "9.26 CGPA",
     }
   ],
   projects: [
