@@ -68,7 +68,7 @@ export const ResumeCard = ({
                     {badges.map((badge, index) => (
                       <Badge
                         variant="secondary"
-                        className="align-middle text-xs p-1"
+                        className="align-middle text-xs px-1 py-0 m-[2px]"
                         key={index}
                       >
                         {badge}
