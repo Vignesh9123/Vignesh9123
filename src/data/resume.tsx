@@ -80,11 +80,11 @@ export const DATA = {
     },
   },
   nowWatching:[{
-    title: "Young Sheldon",
+    title: "Georgie & Mandy's First Marriage",
     genre: "Comedy",
-    year: "2017",
-    link: "https://www.primevideo.com/detail/0JIOH8740DSE21Q80Y0IM1WJYS/ref=atv_dp_share_cu_r",
-    imageLink: "https://m.media-amazon.com/images/M/MV5BODU3M2FmMDctNGViYi00OGUxLThkZDAtZmRkZDBhNWJhNDIzXkEyXkFqcGc@._V1_.jpg"
+    year: "2024",
+    link: "https://www.hotstar.com/in/shows/georgie--mandys-first-marriage/1271400820",
+    imageLink: "https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/07/georgie-mandy-first-marriage-cast.jpg?w=1600&h=900&fit=crop"
   }],
   work: [
     {
