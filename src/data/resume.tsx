@@ -84,7 +84,7 @@ export const DATA = {
     genre: "Comedy",
     year: "2024",
     link: "https://www.hotstar.com/in/shows/georgie--mandys-first-marriage/1271400820",
-    imageLink: "https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/07/georgie-mandy-first-marriage-cast.jpg?w=1600&h=900&fit=crop"
+    imageLink: "https://m.media-amazon.com/images/M/MV5BNTEyZTFmNjQtYzI5NS00NGIyLWEwNWYtYThjZGFiOGUzNDI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   }],
   work: [
     {
