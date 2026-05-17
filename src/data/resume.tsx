@@ -84,7 +84,7 @@ export const DATA = {
     genre: "Comedy",
     year: "2013",
     link: "https://www.netflix.com/in/title/70281562",
-    imageLink: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcST_jFvNxEXeT5s4zZNYso5ChhaAkgvZqTgiFUxaE6A_X3XAFbD"
+    imageLink: "https://www.formulatv.com/images/series/posters/700/760/dest_3.webp"
   }],
   work: [
     {
