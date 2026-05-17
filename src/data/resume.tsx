@@ -84,7 +84,7 @@ export const DATA = {
     genre: "Comedy",
     year: "2013",
     link: "https://www.netflix.com/in/title/70281562",
-    imageLink: "https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/3419/1775651223419-h"
+    imageLink: "https://static.wikia.nocookie.net/brooklynnine-nine/images/7/7f/Season_8_Poster.jpg/revision/latest/scale-to-width-down/1200?cb=20210716235905"
   }],
   work: [
     {
