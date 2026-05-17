@@ -84,7 +84,7 @@ export const DATA = {
     genre: "Comedy",
     year: "2013",
     link: "https://www.netflix.com/in/title/70281562",
-    imageLink: "https://i.guim.co.uk/img/media/a6c0ec5ffca421788f1b66419e7d7b5bad6b9a18/0_128_3000_1800/master/3000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=11074065aadb6ceb3e87f72a236cbfe3"
+    imageLink: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/1000012320.jpg"
   }],
   work: [
     {
