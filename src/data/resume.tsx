@@ -80,11 +80,11 @@ export const DATA = {
     },
   },
   nowWatching:[{
-    title: "Georgie & Mandy's First Marriage",
+    title: "Brooklyn Nine-Nine",
     genre: "Comedy",
-    year: "2024",
-    link: "https://www.hotstar.com/in/shows/georgie--mandys-first-marriage/1271400820",
-    imageLink: "https://m.media-amazon.com/images/M/MV5BNTEyZTFmNjQtYzI5NS00NGIyLWEwNWYtYThjZGFiOGUzNDI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    year: "2013",
+    link: "https://www.netflix.com/in/title/70281562",
+    imageLink: "https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_.jpg"
   }],
   work: [
     {
