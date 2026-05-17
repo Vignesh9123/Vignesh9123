@@ -84,7 +84,7 @@ export const DATA = {
     genre: "Comedy",
     year: "2013",
     link: "https://www.netflix.com/in/title/70281562",
-    imageLink: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/1000012320.jpg"
+    imageLink: "https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/3419/1775651223419-h"
   }],
   work: [
     {
