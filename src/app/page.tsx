@@ -1,3 +1,4 @@
+"use client";
 import { HackathonCard } from "@/components/hackathon-card";
 import { NowWatchingItem } from "@/components/item-demo";
 import BlurFade from "@/components/magicui/blur-fade";
@@ -9,10 +10,16 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { Item as ItemType } from "@/components/item-demo";
+import { Item, ItemContent, ItemDescription, ItemMedia, ItemTitle } from "@/components/ui/item";
+import Image from "next/image";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  const [isActive, setIsActive] = useState(false);
+  const [activeItem, setActiveItem] = useState<ItemType | null>(null);
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -51,12 +58,7 @@ export default function Page() {
           </Markdown>
         </BlurFade>
         <section id="nowWatching" className="my-2">
-          <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <h2 className="text-xl font-bold">Now Watching</h2>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 4}>
             <NowWatchingItem items={DATA.nowWatching} />
-          </BlurFade>
         </section>
       </section>
       <section id="work">

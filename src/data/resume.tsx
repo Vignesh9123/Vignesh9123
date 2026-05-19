@@ -84,7 +84,9 @@ export const DATA = {
     genre: "Comedy",
     year: "2013",
     link: "https://www.netflix.com/in/title/70281562",
-    imageLink: "https://static.wikia.nocookie.net/brooklynnine-nine/images/7/7f/Season_8_Poster.jpg/revision/latest/scale-to-width-down/1200?cb=20210716235905"
+    ott: "Netflix",
+    imageLink: "https://static.wikia.nocookie.net/brooklynnine-nine/images/7/7f/Season_8_Poster.jpg/revision/latest/scale-to-width-down/1200?cb=20210716235905",
+    description:"Comedy series following the exploits of Det. Jake Peralta and his diverse, lovable colleagues as they police the NYPD's 99th Precinct."
   }],
   work: [
     {
