@@ -62,7 +62,7 @@ export function NowWatchingItem({items}:{items: readonly Item[]}) {
                     </motion.div>
                 <ItemContent>
                   <motion.div layoutId="nowWatchingTitle">
-                  <ItemTitle className="line-clamp-1">
+                  <ItemTitle>
                     {activeItem.title}
                   </ItemTitle>
                   </motion.div>
