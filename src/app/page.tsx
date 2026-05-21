@@ -1,6 +1,6 @@
-"use client";
+
 import { HackathonCard } from "@/components/hackathon-card";
-import { NowWatchingItem } from "@/components/item-demo";
+import { NowWatchingItem } from "@/components/now-watching";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -10,16 +10,35 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import { motion } from "framer-motion";
-import { useState } from "react";
-import { Item as ItemType } from "@/components/item-demo";
-import { Item, ItemContent, ItemDescription, ItemMedia, ItemTitle } from "@/components/ui/item";
+import { Suspense } from "react"
+import MovieCalendar from "@/components/movie-calendar";
+import { Tooltip } from "@/components/ui/tooltip-card";
 import Image from "next/image";
+
 const BLUR_FADE_DELAY = 0.04;
 
+const TooltipCard = () => {
+  return (
+    <div>
+      <Image
+        src="/I Am Waiting.jpg"
+        alt="Tyler Durden"
+        className="w-full rounded-sm"
+        width={500}
+        height={300}
+      />
+      <div className="my-4 flex flex-col">
+        <p className="text-lg font-bold">Thuppakki (2012)</p>
+        {/* <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+
+        </p> */}
+      </div>
+    </div>
+  );
+};
+
 export default function Page() {
-  const [isActive, setIsActive] = useState(false);
-  const [activeItem, setActiveItem] = useState<ItemType | null>(null);
+
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -33,11 +52,18 @@ export default function Page() {
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
                 animateByCharacter
               />
-              <BlurFadeText
-                className="max-w-[600px] md:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
+              <BlurFade delay={BLUR_FADE_DELAY} className="relative z-[5]">
+                <div className="max-w-[600px] md:text-xl">
+                <Tooltip
+          containerClassName="z-[100] text-neutral-600 dark:text-neutral-400"
+          content={<TooltipCard />}
+        >
+          {" "}
+          <span className="cursor-pointer font-bold">I am Waiting...</span>
+        </Tooltip>{" "}
+        for the build to succeed.
+                </div>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
@@ -202,6 +228,11 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      <section id="movies">
+      <Suspense fallback={<div>Loading child...</div>}>
+        <MovieCalendar />
+      </Suspense>
+      </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
@@ -227,5 +258,6 @@ export default function Page() {
         </div>
       </section>
     </main>
+
   );
 }
