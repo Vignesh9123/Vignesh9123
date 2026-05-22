@@ -48,26 +48,28 @@ export const MovieGridDialog = ({films, setIsActive}: {films:Film[], setIsActive
                         <motion.div 
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
-                        key={film.name+film.link} layoutId={film.name+film.link} 
+                        key={film.name+film.link} 
+                        layout 
+                        layoutId={film.name+film.link}
                         id={film.name+film.link}
                         className="relative">
-                          <AnimatePresence>
-            {hoveredIndex === index && (
-              <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-700/[0.8] block -z-[5] rounded-xl"
-                layoutId="hoverBackground"
-                initial={{ opacity: 0 }}
-                animate={{
-                  opacity: 1,
-                  transition: { duration: 0.15 },
-                }}
-                exit={{
-                  opacity: 0,
-                  transition: { duration: 0.15, delay: 0.2 },
-                }}
-              />
-            )}
-          </AnimatePresence>
+                        <AnimatePresence>
+                        {hoveredIndex === index && (
+                          <motion.span
+                            className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-700/[0.8] block -z-[5] rounded-xl"
+                            layoutId="hoverBackground"
+                            initial={{ opacity: 0 }}
+                            animate={{
+                              opacity: 1,
+                              transition: { duration: 0.15 },
+                            }}
+                            exit={{
+                              opacity: 0,
+                              transition: { duration: 0.15, delay: 0.2 },
+                            }}
+                          />
+                        )}
+                      </AnimatePresence>
                           <a href={film.link} target="_blank" rel="noopener noreferrer" className="h-full block p-2">
                             <div className="relative h-full w-full mx-auto flex items-center justify-self-center ">
 

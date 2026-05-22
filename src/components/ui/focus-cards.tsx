@@ -20,6 +20,7 @@ export const Card = React.memo(
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
+        "movie-card",
         "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-40 w-full transition-all duration-300 ease-out",
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]",
         index % 2 === 0 ? "group-hover:rotate-2" : "group-hover:-rotate-2"
