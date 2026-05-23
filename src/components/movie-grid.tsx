@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 
 import { MovieGridDialog } from "./movie-grid-dialog";
 import BlurFade from "./magicui/blur-fade";
+import { BLUR_FADE_DELAY } from "@/data/constants";
 
 export default function MovieGrid({films}: {films:Film[]}) {
     const [isActive, setIsActive] = useState(false);
@@ -45,7 +46,7 @@ export default function MovieGrid({films}: {films:Film[]}) {
         <motion.div 
         onHoverStart={removeMovieCardStyles}
         id="movieGrid" layoutId="movieGrid" onClick={() => setIsActive(!isActive)} className="hover:bg-muted/40 cursor-pointer duration-300 p-4 rounded-md group">
-          <BlurFade delay={ 0 }>
+          <BlurFade delay={ BLUR_FADE_DELAY * 16 }>
             <p className="text-sm text-muted-foreground mb-2">Click to view more</p>
             <FocusCards cards={films.map(film => {return {title: film.name, src: film.image, link: film.link}}).slice(0,4)}/>
           </BlurFade>
