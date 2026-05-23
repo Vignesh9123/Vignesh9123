@@ -24,7 +24,7 @@ export interface Item {
 import { useEffect, useState } from "react";
 import BlurFade from "./magicui/blur-fade";
 import { X } from "lucide-react";
-import { BLUR_FADE_DELAY } from "@/app/page";
+import { BLUR_FADE_DELAY } from "@/data/constants";
 
 export function NowWatchingItem({items}:{items: readonly Item[]}) {
   const [isActive, setIsActive] = useState(false);

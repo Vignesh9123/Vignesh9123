@@ -15,8 +15,7 @@ import MovieCalendar from "@/components/movie-calendar";
 import { Tooltip } from "@/components/ui/tooltip-card";
 import Image from "next/image";
 import { TextShimmer } from "@/components/ui/loader";
-
-export const BLUR_FADE_DELAY = 0.04;
+import { BLUR_FADE_DELAY } from "@/data/constants";
 
 const TooltipCard = () => {
   return (
