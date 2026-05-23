@@ -16,7 +16,7 @@ import { Tooltip } from "@/components/ui/tooltip-card";
 import Image from "next/image";
 import { TextShimmer } from "@/components/ui/loader";
 
-const BLUR_FADE_DELAY = 0.04;
+export const BLUR_FADE_DELAY = 0.04;
 
 const TooltipCard = () => {
   return (
@@ -232,10 +232,10 @@ export default function Page() {
       <section id="movies">
       <BlurFade delay={BLUR_FADE_DELAY * 16}>
         <h1 className="text-3xl font-bold">Recently Watched</h1>
-        <Suspense fallback={<TextShimmer text="Fetching Movies..." />}>
-          <MovieCalendar />
-        </Suspense>
       </BlurFade>
+      <Suspense fallback={<TextShimmer text="Fetching Movies..." />}>
+        <MovieCalendar />
+      </Suspense>
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">

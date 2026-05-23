@@ -24,6 +24,7 @@ export interface Item {
 import { useEffect, useState } from "react";
 import BlurFade from "./magicui/blur-fade";
 import { X } from "lucide-react";
+import { BLUR_FADE_DELAY } from "@/app/page";
 
 export function NowWatchingItem({items}:{items: readonly Item[]}) {
   const [isActive, setIsActive] = useState(false);
@@ -80,11 +81,11 @@ export function NowWatchingItem({items}:{items: readonly Item[]}) {
         </motion.div>
       </>
       )}
-          <BlurFade delay={0.04 * 3}>
+          <BlurFade delay={BLUR_FADE_DELAY * 3}>
             <h2 className="text-xl font-bold">Now Watching</h2>
           </BlurFade>
     <div className="flex w-full flex-col gap-6">
-    <BlurFade delay={0.04 * 4}>
+    <BlurFade delay={BLUR_FADE_DELAY * 4}>
       <ItemGroup className="gap-4 ">
           {items.map((item) => (
             <motion.div key={item.title}  onClick={() => {setIsActive(true); setActiveItem(item)}} className="hover:bg-muted/40 cursor-pointer duration-300" layoutId="nowWatching">
