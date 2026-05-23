@@ -1,7 +1,11 @@
 import * as htmlparser from "htmlparser2";
 
 export async function getDiary(){
-    const response = await fetch('https://letterboxd.com/vignesh9123/rss/');
+    const response = await fetch('https://letterboxd.com/vignesh9123/rss/', {
+        next:{
+            revalidate: 30 * 60            
+        }
+    });
     const xml = await response.text()
 
     const dom = htmlparser.parseDocument(xml,{
