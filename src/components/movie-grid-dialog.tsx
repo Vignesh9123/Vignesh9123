@@ -79,7 +79,7 @@ export const MovieGridDialog = ({films, setIsActive}: {films:Film[], setIsActive
                                 <div className="flex flex-row justify-between w-full absolute bottom-2 pr-3">
                                     <div>
 
-                                    <p className="text-lg font-bold mix-blend-screen line-clamp-2">{film.name} <span className="text-xs">({film.releaseYear})</span></p>
+                                    <p className="text-lg font-bold text-white line-clamp-2">{film.name} <span className="text-xs">({film.releaseYear})</span></p>
                                     <div className="text-sm flex flex-col 2xl:flex-row 2xl:items-center">
                                     <span className="inline-flex gap-0.5">
                                         {Array.from({ length: 5 }, (_, i) => {
