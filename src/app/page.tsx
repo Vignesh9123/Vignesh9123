@@ -1,4 +1,3 @@
-
 import { HackathonCard } from "@/components/hackathon-card";
 import { NowWatchingItem } from "@/components/now-watching";
 import BlurFade from "@/components/magicui/blur-fade";
@@ -22,7 +21,7 @@ const TooltipCard = () => {
     <div>
       <Image
         src="/I Am Waiting.jpg"
-        alt="Tyler Durden"
+        alt="Thalapathy Vijay in Thuppakki"
         className="w-full rounded-sm"
         width={500}
         height={300}
