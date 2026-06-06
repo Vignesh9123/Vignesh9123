@@ -110,7 +110,7 @@ export const DATA = {
       logoUrl: "/jssstulogo.png",
       start: "2022",
       end: "2026",
-      score: "9.26 CGPA",
+      score: "9.29 CGPA",
     }
   ],
   projects: [
