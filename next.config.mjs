@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+import { withContentCollections } from "@content-collections/next";
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -13,4 +15,4 @@ const nextConfig = {
   }
 };
 
-export default nextConfig;
+export default withContentCollections(nextConfig);
