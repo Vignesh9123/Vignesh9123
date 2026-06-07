@@ -4,6 +4,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { paginate, normalizePage } from "@/lib/pagination";
 import { ChevronRight } from "lucide-react";
+import { CanvasText } from "@/components/ui/canvas-text";
+import { SquigglyText } from "@/components/ui/squiggly-text";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -49,7 +51,28 @@ export default async function BlogPage({
       <BlurFade delay={BLUR_FADE_DELAY}>
         <h1 className="text-2xl font-semibold tracking-tight mb-2">Blog <span className="ml-1 bg-card border border-border rounded-md px-2 py-1 text-muted-foreground text-sm">{sortedPosts.length} posts</span></h1>
         <p className="text-sm text-muted-foreground mb-8">
-          My thoughts on software development, life, and more.
+        Stories from the{" "}
+        <CanvasText
+          text="terminal"
+          backgroundClassName="bg-blue-600 dark:bg-blue-700"
+          className="font-bold"
+          colors={[
+            "rgba(0, 153, 255, 1)",
+            "rgba(0, 153, 255, 0.9)",
+            "rgba(0, 153, 255, 0.8)",
+            "rgba(0, 153, 255, 0.7)",
+            "rgba(0, 153, 255, 0.6)",
+            "rgba(0, 153, 255, 0.5)",
+            "rgba(0, 153, 255, 0.4)",
+            "rgba(0, 153, 255, 0.3)",
+            "rgba(0, 153, 255, 0.2)",
+            "rgba(0, 153, 255, 0.1)",
+          ]}
+          lineGap={4}
+          animationDuration={20}
+        />{" "}
+        and the {" "} 
+        <SquigglyText className="font-bold" scale={1.5}>theater</SquigglyText>.
         </p>
       </BlurFade>
 
