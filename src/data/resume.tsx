@@ -80,13 +80,13 @@ export const DATA = {
     },
   },
   nowWatching:[{
-    title: "Brooklyn Nine-Nine",
+    title: "Silicon Valley",
     genre: "Comedy",
-    year: "2013",
-    link: "https://www.netflix.com/in/title/70281562",
-    ott: "Netflix",
-    imageLink: "https://static.wikia.nocookie.net/brooklynnine-nine/images/7/7f/Season_8_Poster.jpg/revision/latest/scale-to-width-down/1200?cb=20210716235905",
-    description:"Comedy series following the exploits of Det. Jake Peralta and his diverse, lovable colleagues as they police the NYPD's 99th Precinct."
+    year: "2014",
+    link: "https://www.hotstar.com/in/shows/silicon-valley/1971002879?utm_source=gwa",
+    ott: "JioHotstar",
+    imageLink: "https://resizing.flixster.com/lNAnySQkJK0QNgjKXY5LsAyGqT4=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjExMTg0MS53ZWJw",
+    description:"Follows the struggle of Richard Hendricks, a Silicon Valley engineer trying to build his own company called Pied Piper."
   }],
   work: [
     {
