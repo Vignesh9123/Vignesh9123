@@ -43,7 +43,13 @@ export const MovieGridDialog = ({films, setIsActive}: {films:Film[], setIsActive
             transition={{ duration: 0.2, delay: 0.5 }} 
             className="fixed inset-0 bg-black/50 z-10 backdrop-blur-sm" onClick={() => setIsActive(false)}></motion.div>
             <motion.div layout layoutId="movieGrid" className="fixed inset-0 h-[70vh] overflow-auto w-[80vw] bg-muted z-10 flex self-center justify-self-center rounded-md">
-                <div className="grid grid-cols-1 md:grid-cols-4 w-[98%] mx-auto mt-2">
+                <div className="grid grid-cols-1 md:grid-cols-4 w-[98%] mx-auto mt-2 snap-y snap-mandatory overflow-y-auto scrollbar-thin [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-stone-100
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  [&::-webkit-scrollbar-thumb]:bg-stone-300
+  dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"> {/*TODO: Use cn */}
                     {films.map((film, index) => (
                         <motion.div 
                         onMouseEnter={() => setHoveredIndex(index)}
@@ -70,7 +76,7 @@ export const MovieGridDialog = ({films, setIsActive}: {films:Film[], setIsActive
                           />
                         )}
                       </AnimatePresence>
-                          <a href={film.link} target="_blank" rel="noopener noreferrer" className="h-full block p-2">
+                          <a href={film.link} target="_blank" rel="noopener noreferrer" className="h-full block p-2 snap-start">
                             <div className="relative h-full w-full mx-auto flex items-center justify-self-center ">
 
                        
