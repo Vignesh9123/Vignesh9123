@@ -16,26 +16,6 @@ import Image from "next/image";
 import { TextShimmer } from "@/components/ui/loader";
 import { BLUR_FADE_DELAY } from "@/data/constants";
 
-const TooltipCard = () => {
-  return (
-    <div>
-      <Image
-        src="/I Am Waiting.jpg"
-        alt="Thalapathy Vijay in Thuppakki"
-        className="w-full rounded-sm"
-        width={500}
-        height={300}
-      />
-      <div className="my-4 flex flex-col">
-        <p className="text-lg font-bold">Thuppakki (2012)</p>
-        {/* <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
-
-        </p> */}
-      </div>
-    </div>
-  );
-};
-
 export default function Page() {
 
   return (
@@ -53,14 +33,7 @@ export default function Page() {
               />
               <BlurFade delay={BLUR_FADE_DELAY} className="relative z-[5]">
                 <div className="max-w-[600px] md:text-xl">
-                <Tooltip
-          containerClassName="z-[100] text-neutral-600 dark:text-neutral-400"
-          content={<TooltipCard />}
-        >
-          {" "}
-          <span className="cursor-pointer font-bold">I am Waiting...</span>
-        </Tooltip>{" "}
-        for the build to succeed.
+                  {DATA.description}
                 </div>
               </BlurFade>
             </div>
