@@ -11,8 +11,6 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import { Suspense } from "react"
 import MovieCalendar from "@/components/movie-calendar";
-import { Tooltip } from "@/components/ui/tooltip-card";
-import Image from "next/image";
 import { TextShimmer } from "@/components/ui/loader";
 import { BLUR_FADE_DELAY } from "@/data/constants";
 

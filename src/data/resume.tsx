@@ -79,15 +79,8 @@ export const DATA = {
       },
     },
   },
-  nowWatching:[{
-    title: "Silicon Valley",
-    genre: "Comedy",
-    year: "2014",
-    link: "https://www.hotstar.com/in/shows/silicon-valley/1971002879?utm_source=gwa",
-    ott: "JioHotstar",
-    imageLink: "https://resizing.flixster.com/lNAnySQkJK0QNgjKXY5LsAyGqT4=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjExMTg0MS53ZWJw",
-    description:"Follows the struggle of Richard Hendricks, a Silicon Valley engineer trying to build his own company called Pied Piper."
-  }],
+  nowWatching:[
+  ],
   work: [
     {
       company: "OpenText",

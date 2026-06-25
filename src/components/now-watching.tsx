@@ -87,7 +87,7 @@ export function NowWatchingItem({items}:{items: readonly Item[]}) {
     <div className="flex w-full flex-col gap-6">
     <BlurFade delay={BLUR_FADE_DELAY * 4}>
       <ItemGroup className="gap-4 ">
-          {items.map((item) => (
+          {items.length > 0 ? items.map((item) => (
             <motion.div key={item.title}  onClick={() => {setIsActive(true); setActiveItem(item)}} className="hover:bg-muted/40 cursor-pointer duration-300" layoutId="nowWatching">
             <Item variant="outline" role="listitem">
               <motion.div layoutId="nowWatchingImage">
@@ -116,7 +116,11 @@ export function NowWatchingItem({items}:{items: readonly Item[]}) {
                 </motion.a>
             </Item>
             </motion.div>
-          ))}
+          )): <div>
+              <Item variant="outline" role="listitem" className="justify-center">
+               Not currently watching any series or sitcoms. 
+              </Item>
+          </div>}
      
       </ItemGroup>
     </BlurFade>
