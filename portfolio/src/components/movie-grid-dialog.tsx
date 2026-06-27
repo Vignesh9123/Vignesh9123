@@ -3,7 +3,7 @@ import { useId, useState } from "react";
 import { Film } from "./movie-grid";
 import {AnimatePresence, motion} from 'framer-motion'
 import Image from "next/image";
-import { Edit3, Heart, LucideRepeat } from "lucide-react";
+import { Edit3, Heart, LucideRepeat, X } from "lucide-react";
 
 function HeartIcon({ fill }: { fill: "full" | "half" | "empty" }) {
     const id = useId();
@@ -42,7 +42,12 @@ export const MovieGridDialog = ({films, setIsActive}: {films:Film[], setIsActive
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2, delay: 0.5 }} 
             className="fixed inset-0 bg-black/50 z-10 backdrop-blur-sm" onClick={() => setIsActive(false)}></motion.div>
-            <motion.div layout layoutId="movieGrid" className="fixed inset-0 h-[70vh] overflow-auto w-[80vw] bg-muted z-10 flex self-center justify-self-center rounded-md">
+            <AnimatePresence>
+            <motion.div layoutId="movieGrid" className="fixed inset-0 h-[70vh] w-[80vw] bg-muted z-10 flex self-center justify-self-center rounded-md">
+            <div className="absolute bg-muted z-[100000] rounded-md -top-4 -right-2">
+            <X onClick={() => {setIsActive(false);}} className="cursor-pointer" />
+
+            </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 w-[98%] mx-auto mt-2 snap-y snap-mandatory overflow-y-auto scrollbar-thin [&::-webkit-scrollbar]:w-2
   [&::-webkit-scrollbar-track]:rounded-full
   [&::-webkit-scrollbar-track]:bg-stone-100
@@ -54,6 +59,7 @@ export const MovieGridDialog = ({films, setIsActive}: {films:Film[], setIsActive
                         <motion.div 
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
+                         
                         key={film.name+film.link} 
                         layout 
                         layoutId={film.name+film.link}
@@ -122,6 +128,7 @@ export const MovieGridDialog = ({films, setIsActive}: {films:Film[], setIsActive
                     ))}
                 </div>
            </motion.div>
-            </>
+           </AnimatePresence> 
+           </>
     )
 }

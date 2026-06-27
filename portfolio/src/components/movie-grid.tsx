@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 import { MovieGridDialog } from "./movie-grid-dialog";
 import BlurFade from "./magicui/blur-fade";
 import { BLUR_FADE_DELAY } from "@/data/constants";
-
+import { Button } from "./ui/button";
 export default function MovieGrid({films}: {films:Film[]}) {
     const [isActive, setIsActive] = useState(false);
     const removeMovieCardStyles = () =>{
@@ -43,14 +43,18 @@ export default function MovieGrid({films}: {films:Film[]}) {
         {isActive && (
           <MovieGridDialog films={films} setIsActive={setIsActive}/>
         )}
+        <div className="flex flex-col">
+
         <motion.div 
         onHoverStart={removeMovieCardStyles}
-        id="movieGrid" layoutId="movieGrid" onClick={() => setIsActive(!isActive)} className="hover:bg-muted/40 cursor-pointer duration-300 p-4 rounded-md group">
+        id="movieGrid" layoutId="movieGrid"  className="duration-300 p-4 rounded-md group">
           <BlurFade delay={ BLUR_FADE_DELAY * 8 }>
-            <p className="text-sm text-muted-foreground mb-2">Click to view more</p>
             <FocusCards cards={films.map(film => {return {title: film.name, src: film.image, link: film.link}}).slice(0,4)}/>
           </BlurFade>
         </motion.div>
-        </>
+       
+          <Button variant={"outline"} size={"sm"} name="View my recently watched films" aria-label="View my recently watched films" onClick={() => setIsActive(!isActive)} className="text-sm text-muted-foreground mb-2 w-fit ml-auto mr-4">View more</Button>
+        </div>
+          </>
     );
 }
