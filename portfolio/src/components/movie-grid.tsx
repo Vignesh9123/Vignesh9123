@@ -13,7 +13,7 @@ export interface Film {
         reviewWritten: string | null;
         image: string;
 }
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { MovieGridDialog } from "./movie-grid-dialog";
 import BlurFade from "./magicui/blur-fade";
@@ -40,9 +40,9 @@ export default function MovieGrid({films}: {films:Film[]}) {
     
     return (
         <>
-        {isActive && (
-          <MovieGridDialog films={films} setIsActive={setIsActive}/>
-        )}
+       <AnimatePresence>
+  {isActive && <MovieGridDialog films={films} setIsActive={setIsActive} />}
+</AnimatePresence>
         <div className="flex flex-col">
 
         <motion.div 

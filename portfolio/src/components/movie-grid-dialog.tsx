@@ -33,17 +33,18 @@ function HeartIcon({ fill }: { fill: "full" | "half" | "empty" }) {
   }
 export const MovieGridDialog = ({films, setIsActive}: {films:Film[], setIsActive: React.Dispatch<React.SetStateAction<boolean>>}) => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
+    
     return (
         <>
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.2, delay: 0.5 }} 
+            transition={{ duration: 0.2 }} 
             className="fixed inset-0 bg-black/50 z-10 backdrop-blur-sm" onClick={() => setIsActive(false)}></motion.div>
-            <AnimatePresence>
-            <motion.div layoutId="movieGrid" className="fixed inset-0 h-[70vh] w-[80vw] bg-muted z-10 flex self-center justify-self-center rounded-md">
+            <motion.div
+             exit={{ opacity: 0 }}
+            layoutId="movieGrid" className="fixed inset-0 h-[70vh] w-[80vw] bg-muted z-10 flex self-center justify-self-center rounded-md">
             <div className="absolute bg-muted z-[100000] rounded-md -top-4 -right-2">
             <X onClick={() => {setIsActive(false);}} className="cursor-pointer" />
 
@@ -62,7 +63,6 @@ export const MovieGridDialog = ({films, setIsActive}: {films:Film[], setIsActive
                          
                         key={film.name+film.link} 
                         layout 
-                        layoutId={film.name+film.link}
                         id={film.name+film.link}
                         className="relative">
                         <AnimatePresence>
@@ -128,7 +128,6 @@ export const MovieGridDialog = ({films, setIsActive}: {films:Film[], setIsActive
                     ))}
                 </div>
            </motion.div>
-           </AnimatePresence> 
            </>
     )
 }

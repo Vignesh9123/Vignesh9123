@@ -25,7 +25,6 @@ export const Card = React.memo(
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]",
         index % 2 === 0 ? "group-hover:rotate-2" : "group-hover:-rotate-2"
       )}
-      layoutId={card.title+card.link}
     >
       <img
         src={card.src}
